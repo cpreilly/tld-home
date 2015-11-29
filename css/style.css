@@ -1,0 +1,361 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+html, body {height:100%;}
+body {
+  color: #5a5a5a;
+  font-family: helvetica, sans-serif;
+}
+.btn {border-radius: 0;}
+.btn.focus, .btn:focus, .btn:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background: #666666;
+    border: 1px solid transparent;
+}
+.btn-primary, .btn-primary:visited {
+    background-color: #ff2c2c;
+    border-color: #ff2c2c;
+    font-size: 14px;
+    padding: 15px 35px;
+    text-transform: uppercase;
+}
+.btn-primary:hover {background-color: #ff5858;border-color:#ff5858;}
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {background-color: #de1e1e;border-color:#de1e1e;}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+.navbar-header {background:#555555;}
+
+.navbar-default .navbar-nav>li>a {
+    color: #f8f8f8;
+    background-color: #555555;
+}
+.navbar-brand,
+.navbar-nav li a {
+    padding:25px 15px;
+    height: 70px;
+}
+
+.navbar-toggle {margin-top:15px;margin-bottom:15px;}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+}
+.carousel-inner {height: 100%;}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+.carousel-control.right, .carousel-control.left {background-image:none; }
+/* Declare heights because of positioning of img element */
+
+.carousel-inner .item {
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+.carousel-indicators li, .carousel-indicators .active {
+    width: 35px;
+    height: 15px;
+    margin: 0;
+    background-color: #dddddd;
+    border-radius: 0;
+    border: 0;
+}
+.carousel-indicators .active {background-color: #666666;}
+.s1 {
+    background: url(../images/home/tld-slide-1.jpg);
+}
+.s2 {
+    background: url(http://placehold.it/2000x1000); 
+}
+
+  #hmSlider h1 {margin-top:0;line-height: .85em}
+  #hmSlider h2 {margin-bottom:-5px;}
+
+/* SHOP THREE SECTION
+-------------------------------------------------- */
+
+.shop3 {height:auto;text-align: center;}
+.shop3 h3 {font-weight: normal;margin-bottom:0;}
+.shop3 div {
+    height: 150px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+.moto3 span, .bike3 span, .sports3 span {
+    width: 100%;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+.shop3 p {
+    opacity: 0;
+    transition: .5s all ease .2s;
+    font-size: 16px;
+}
+.shop3 .moto3:hover p, .shop3 .bike3:hover p, .shop3 .sports3:hover p {
+    opacity: 1;
+}
+.shop3 .moto3 {
+    position:relative;
+}
+
+.moto3 {
+    background: url(http://placehold.it/500x200);
+}
+.bike3 {
+    background: url(http://placehold.it/500x200); 
+}
+.sports3 {
+    background: url(http://placehold.it/500x200); 
+}
+.moto3:before, .bike3:before, .sports3:before {position:absolute;width: 100%;height:100%;background:rgba(0,0,0,0.25);top:0;left:0;content: "" }
+
+/* NEW GEAR HOME 
+------------------------- */
+#newgear a {
+    display: inline-block;
+    padding: 15px 30px;
+    width: auto;
+    color: #999999;
+    transition: all .2s ease;
+    text-decoration: none;
+}
+#newgear a:hover {
+    background: #ff2c2c;
+    color:#ffffff;
+}
+
+/* PRO SETUP HOME 
+------------------------- */
+.pro {height:auto;}
+.moto {
+    background: url(http://placehold.it/1000x600);
+}
+.bike {
+    background: url(http://placehold.it/1000x600); 
+}
+.pro-setup {
+    height: 300px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+.pro-items {height:calc(100% - 70px);text-align: center;}
+.pro-row {
+   text-align:center;
+   background:#f8f8f8;
+   padding:15px;
+   height:33.333%;
+}
+.pro-row img {height: 100%;}
+.pro-row span {
+    width: 100%;
+    background: #ff2c2c;
+    color: #ffffff;
+    padding: 10px 20px;
+    opacity: 0;
+    transition: .5s all ease .2s;
+}
+.pro-row a:hover span {
+    opacity: 1;
+}
+.pro-row .col-xs-6 {
+    position:relative;
+}
+.pro-row div {background: #ffffff;height: 100%;}
+.pro-name {
+  background:#cccccc;
+  height:70px;
+  padding: 20px 0;
+  font-size: 20px;
+  font-family: helvetica, sans-serif;
+}
+.pro-name:before{
+    content: "\e252";
+    font-family: "Glyphicons Halflings";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    font-size: 30px;
+    margin-left: -15px;
+    line-height: 0.5;
+    color: #f8f8f8;
+}
+
+/* Products
+------------------------- */
+#size {background:#444444;}
+
+.table-bordered {
+    border: 1px solid #444444;
+    background: #666;
+    color: #dddddd;
+    margin-bottom:0;
+}
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    border: 1px solid #555555;
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #555555;
+}
+.table-hover>tbody>tr:hover {
+    background-color: #888888;
+}
+.table-responsive {
+    border: none;
+  }
+.table-bordered tfoot td {font-size:12px;}
+/* Featurettes
+------------------------- */
+
+.no-gutter {
+    padding: 0;
+    margin: 0;
+}
+.shdw {text-shadow: 2px 2px 0 #666;}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  .navbar-fixed-top {
+    border-width: 0;
+}
+  .navbar>.container-fluid .navbar-brand, .navbar>.container-fluid .navbar-brand {    
+    margin: 0;
+    background: url(../images/home/tld-full-logo.png) no-repeat center #555555;
+    background-size:219px;
+    color: #f8f8f8;
+    width:250px;}
+  .navbar .container-fluid {padding:0;}
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-links {width: calc(100% - 530px);}
+  .navbar-links li {width:25%;text-align: center;}
+  .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #ffffff;
+    background-color: #666;
+}
+  .navbar-icons {width:280px;}
+  .navbar-icons li {
+    width: 70px;
+    height: 70px;
+    background: #555555;
+    color: #f8f8f8;}
+  .navbar-icons li:hover {
+    color: #ffffff;
+    background-color: #666;
+}
+  .navbar-icons span {
+    font-size: 24px;
+    padding: 16px 22px;
+  }
+  .navbar-right {margin-right: 0;}
+ .navbar-nav .dropdown-menu li {
+    margin: 0;
+    height: auto;
+    width: 100%;
+    text-align: left;
+}
+.navbar-nav > li > .dropdown-menu {width:100%;background:#444444;}
+.navbar-nav > li > .dropdown-menu li {color:#ffffff;}
+.navbar-nav > li > .dropdown-menu li a {padding: 15px;height: auto;color: #f8f8f8;}
+.navbar-nav > li > .dropdown-menu li a:hover {background:#555555;color: #ffffff;}
+
+/* Full width dropdown
+.nav > li.dropdown.open { position: static; }
+.nav > li.dropdown.open .dropdown-menu {display:table; width: 100%; text-align: center; left:0; right:0; }
+.dropdown-menu>li { display: table-cell; }
+*/
+
+  /* Bump up size of carousel content */
+  .land-wrap {height:100%;min-height: 600px;padding-top:70px;}
+  .carousel {
+    height: 65%;
+  }
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+.shop3 {height:35%;}
+.shop3 div {height: 100%;}
+
+#newgear .row {display:table;}
+#newgear h3 {margin:0 15px;}
+
+.pro {height:600px;}
+.pro-setup {height: 100%;}
+#size h4 {margin:0;color:#dddddd;}
+}
+@media (min-width: 992px) {
+  #hmSlider h2 {
+    color: #ff2c2c;
+    margin-bottom: 5px;
+    font-size: 42px;
+  }
+  #hmSlider h1 {
+    color: #dddddd;
+    margin-bottom: 20px;
+    font-size: 80px;
+    font-weight: 600;
+    line-height: .85em;
+  }
+
+  .carousel-caption {    
+    text-align: left;
+
+    max-width: 500px;
+    position: relative;
+    float: right;
+}
+#newgear .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#size .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.vcenter {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.center{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+}
