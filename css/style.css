@@ -4,7 +4,7 @@
 html, body {height:100%;}
 body {
   color: #5a5a5a;
-  font-family: helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 .btn {border-radius: 0;}
 .btn.focus, .btn:focus, .btn:hover {
@@ -27,17 +27,56 @@ body {
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 .navbar-header {background:#555555;}
-
+  .navbar-default {
+    background-color: #555555;
+    border: 0;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+color: #ffffff;
+background-color: #444444;
+}
 .navbar-default .navbar-nav>li>a {
     color: #f8f8f8;
-    background-color: #555555;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #ffffff;
+    background:#666666;
+}
+.navbar-nav {
+    padding: 0 15px;
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a, .navbar-default .navbar-nav .open .dropdown-menu>li>a:visited {
+    color: #f8f8f8;
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: #ffffff;
+    background:#666666;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+    background: #555555;
+}
+.navbar-toggle {float:left;margin-left:15px;}
+.navbar-brand {
+    margin: 0;
+    background: url(../images/tld-sig-logo.png) no-repeat center #555555;
+    background-size: 175px;
+    color: #f8f8f8;
+    width: 205px;
 }
 .navbar-brand,
 .navbar-nav li a {
     padding:25px 15px;
     height: 70px;
 }
-
+.navbar-nav .open .dropdown-menu {
+    background: #444444;
+    color: #ffffff;
+}
+.navbar-nav .open .dropdown-menu li:hover {
+    background: #666666;
+    color: #ffffff;
+}
 .navbar-toggle {margin-top:15px;margin-bottom:15px;}
 
 /* CUSTOMIZE THE CAROUSEL
@@ -147,13 +186,13 @@ body {
 ------------------------- */
 .pro {height:auto;}
 .moto {
-    background: url(http://placehold.it/1000x600);
+    background: url(../images/home/pro-setup-jessy.jpg);
 }
 .bike {
-    background: url(http://placehold.it/1000x600); 
+    background: url(../images/home/pro-setup-kj.jpg); 
 }
 .pro-setup {
-    height: 300px;
+    min-height: 300px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -169,7 +208,10 @@ body {
    padding:15px;
    height:33.333%;
 }
-.pro-row img {height: 100%;}
+.pro-row img {
+    max-width: 150px;
+    max-height: 150px;
+}
 .pro-row span {
     width: 100%;
     background: #ff2c2c;
@@ -186,11 +228,12 @@ body {
 }
 .pro-row div {background: #ffffff;height: 100%;}
 .pro-name {
-  background:#cccccc;
-  height:70px;
-  padding: 20px 0;
-  font-size: 20px;
-  font-family: helvetica, sans-serif;
+    background: #555555;
+    height: 70px;
+    padding: 20px 0;
+    font-size: 20px;
+    font-family: "helveticaneue-light", sans-serif;
+    color: #f8f8f8;
 }
 .pro-name:before{
     content: "\e252";
@@ -203,30 +246,41 @@ body {
     line-height: 0.5;
     color: #f8f8f8;
 }
+.pro-name strong {
+    font-family: helvetica, sans-serif;
+    font-weight: 500;
+}
 
 /* Products
 ------------------------- */
-#size {background:#444444;}
-
-.table-bordered {
+#size, #certs {background:#444444;padding:70px 0;}
+#size span img, #certs span img {width:50%;}
+#size span h4, #certs span h4 {
+    margin: 10px 0;
+    color: #dddddd;
+    font-family: "HelveticaNeue-Light", helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+}
+#size .table-bordered {
     border: 1px solid #444444;
     background: #666;
     color: #dddddd;
     margin-bottom:0;
 }
-.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+#size .table-bordered>tbody>tr>td, #size .table-bordered>tbody>tr>th, #size .table-bordered>tfoot>tr>td, #size .table-bordered>tfoot>tr>th, #size .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
     border: 1px solid #555555;
 }
-.table-striped>tbody>tr:nth-of-type(odd) {
+#size .table-striped>tbody>tr:nth-of-type(odd) {
     background-color: #555555;
 }
-.table-hover>tbody>tr:hover {
+#size .table-hover>tbody>tr:hover {
     background-color: #888888;
 }
-.table-responsive {
+#size .table-responsive {
     border: none;
   }
-.table-bordered tfoot td {font-size:12px;}
+#size .table-bordered tfoot td {font-size:12px;}
 /* Featurettes
 ------------------------- */
 
@@ -235,17 +289,32 @@ body {
     margin: 0;
 }
 .shdw {text-shadow: 2px 2px 0 #666;}
+.vcenter {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.center{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
 @media (min-width: 768px) {
-  .navbar-fixed-top {
-    border-width: 0;
+.navbar-nav {
+    padding: 0;
 }
   .navbar>.container-fluid .navbar-brand, .navbar>.container-fluid .navbar-brand {    
     margin: 0;
-    background: url(../images/home/tld-full-logo.png) no-repeat center #555555;
+    background: url(../images/tld-full-logo.png) no-repeat center #555555;
     background-size:219px;
     color: #f8f8f8;
     width:250px;}
@@ -290,7 +359,7 @@ body {
 */
 
   /* Bump up size of carousel content */
-  .land-wrap {height:100%;min-height: 600px;padding-top:70px;}
+  .land-wrap {height:100%;min-height: 600px;}
   .carousel {
     height: 65%;
   }
@@ -308,7 +377,13 @@ body {
 
 .pro {height:600px;}
 .pro-setup {height: 100%;}
-#size h4 {margin:0;color:#dddddd;}
+.moto {
+    background-position-x: -600px;
+}
+.bike {
+    background-position-x: -200px;
+}
+
 }
 @media (min-width: 992px) {
   #hmSlider h2 {
@@ -326,10 +401,19 @@ body {
 
   .carousel-caption {    
     text-align: left;
-
     max-width: 500px;
-    position: relative;
     float: right;
+    right: inherit;
+    bottom: inherit; 
+    left: inherit; 
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.moto {
+    background-position-x: center;
+}
+.bike {
+    background-position-x: center;
 }
 #newgear .row {
   display: -webkit-box;
@@ -343,19 +427,13 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
-.vcenter {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
+  #size span, #certs span {
+    border-right: 1px #666666 solid;
+    padding: 50px 25px 50px 0;
+    margin-right: 25px;
 }
-.center{
-    position: absolute;
-    left: 50%;
-    top:50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-  }
+#size span h4, #certs span h4 {margin:10px 0 0;}
+#size span img {width:75%;}
+#certs span img {width:75%;}
+#certs .slogos {width:25%;}
 }
