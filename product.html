@@ -28,10 +28,10 @@
     width: 25%;
 }
 .prd-nav li:hover, .prd-nav li:active {
-    background: #666666;
+    background: #efefef;
 }
 .prd-nav li a {
-    color: #f8f8f8;
+    color: #666666;
     font-size: 24px;
     padding: 25px 15px;
     height: 70px;
@@ -39,11 +39,11 @@
     position: relative;
     font-family: 'BlenderProBook', sans-serif;
     line-height: 1em;
-    border-left: 1px #666666 solid;
-    border-right: 1px #666666 solid;
+    border-left: 1px #efefef solid;
+    border-right: 1px #efefef solid;
 }
 .prd-nav li a:hover, .prd-nav li a:visited, .prd-nav li a:active {text-decoration: none;}
-.prd-nav li a:hover {color:#ffffff;}
+.prd-nav li a:hover {color:#666666;}
 .prd-info {
     background: #f8f8f8;
     background-size: cover;
@@ -56,7 +56,7 @@
 .copy {
     max-width: 600px;
     padding: 15px;
-    background: rgba(255,255,255,0.65);
+    background: rgba(255,255,255,0.85);
     position: relative;
 }
 .copy h2 {
@@ -162,9 +162,12 @@
     align-self: auto;
     }
 @media (min-width: 768px) {
+  .copy {
+    background: rgba(255,255,255,0.65);
+  }
 .flex-marker {
     text-align: left;
-    border-right: 1px #666666 solid;
+    border-right: 1px #cccccc solid;
     padding: 0 25px 0 0;
     margin-right: 25px;
 }
@@ -172,19 +175,19 @@
 }
 </style>
     <body>
-      <div class="container-fluid hidden-xs" style="background: #555555;">
+      <div class="container-fluid hidden-xs" style="background: #dddddd;">
         <div class="container">
           <div class="row">
             <ul class="prd-nav">
-                <li><a href="#">FEATURES</a></li>
+                <li><a href="#features">FEATURES</a></li>
                 <li><a href="#video">VIDEO</a></li>
                 <li><a href="#sizing">SIZING</a></li>
-                <li><a href="#">REVIEWS</a></li>
+                <li><a href="#reviews">REVIEWS</a></li>
             </ul>
           </div>
         </div>
       </div>
-
+      <a name="features"></a> 
       <div class="container-fluid prd-info" style="background-image: url('images/product/bg-se3-air.jpg');">
         <div class="container">
           <div class="copy pull-left">
@@ -214,7 +217,7 @@
         </div>
       </div>
 
-      <div class="container-fluid dk-gray">
+      <div class="container-fluid lt-gray">
         <div class="container">
           <div class="flex-container">
             <div class="flex-item flex-marker">
@@ -279,8 +282,20 @@
           </div>
         </div>
       </div>
+      <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div>
+                    <iframe width="100%" height="500" src=""></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
       <a name="sizing"></a> 
-      <div id="size" class="container-fluid dk-gray">
+      <div id="size" class="container-fluid lt-gray">
         <div class="container">
           <div class="row">
             <div class="col-md-4">
@@ -347,13 +362,21 @@
         </div>
       </div>
     </div>
-
-    <footer style="background:#555555;height:300px;">
+  <a name="reviews"></a> 
+    <footer>
+      <div class="container-fluid promo">
+        <span>FREE SHIPPING ON ORDERS $100+</span>
+      </div>
+      <div class="container-fluid footer" style="background:#dddddd;height:300px;"></div>
+      <div class="subfoot text-center">
+        <span>Copyright © 2015 Troy Lee Designs, Inc. All rights reserved</span>
+      </div>
     </footer>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/js.js"></script>
   </body>
   </html>
