@@ -20,79 +20,67 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
     </head>
-
-    <body>
-
-
-      <div id="size" class="container-fluid dk-gray">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <span class="vcenter">
-                <img src="images/product/logo-se3.png" width="220" />
-                <h4>SE3 SIZING INFORMATION</h4>
-              </span>
-            </div>
-            <div class="col-md-8 table-responsive">
-              <table class="table table-bordered table-striped table-hover">
-                <thead>
-                  <tr>
-                    <th>HELMET SIZE</th>
-                    <th>HAT SIZE</th>
-                    <th>CM</th>
-                    <th>INCHES</th>
-                  </tr>
-                </thead>
-                <tfoot>
-                 <tr>
-                  <td colspan="4">*Headliners and cheekpads can be interchanged within the same EPS size. SE3 cheekpads are interchangable through the entire size range.</td>
-                </tr>
-              </tfoot>
-              <tbody>
-                <tr>
-                  <th scope="row">X-SMALL</th>
-                  <td>Table cell</td>
-                  <td>Table cell</td>
-                  <td>Table cell</td>
-                </tr>
-                <tr>
-                  <th scope="row">SMALL</th>
-                  <td>Table cell</td>
-                  <td>Table cell</td>
-                  <td>Table cell</td>
-                </tr>
-                <tr>
-                  <th scope="row">MEDIUM</th>
-                  <td>Table cell</td>
-                  <td>Table cell</td>
-                  <td>Table cell</td>
-                </tr>
-                <tr>
-                  <th scope="row">LARGE</th>
-                  <td>Table cell</td>
-                  <td>Table cell</td>
-                  <td>Table cell</td>
-                </tr>
-                <tr>
-                  <th scope="row">X-LARGE</th>
-                  <td>Table cell</td>
-                  <td>Table cell</td>
-                  <td>Table cell</td>
-                </tr>
-                <tr>
-                  <th scope="row">2X-LARGE</th>
-                  <td>Table cell</td>
-                  <td>Table cell</td>
-                  <td>Table cell</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-
 <style type="text/css">
+.prd-nav li {
+    display: inline;
+    float: left;
+    text-align: center;
+    width: 25%;
+}
+.prd-nav li:hover, .prd-nav li:active {
+    background: #666666;
+}
+.prd-nav li a {
+    color: #f8f8f8;
+    font-size: 24px;
+    padding: 25px 15px;
+    height: 70px;
+    display: block;
+    position: relative;
+    font-family: 'BlenderProBook', sans-serif;
+    line-height: 1em;
+    border-left: 1px #666666 solid;
+    border-right: 1px #666666 solid;
+}
+.prd-nav li a:hover, .prd-nav li a:visited, .prd-nav li a:active {text-decoration: none;}
+.prd-nav li a:hover {color:#ffffff;}
+.prd-info {
+    background: #f8f8f8;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    padding:70px 0;
+}
+.copy {
+    max-width: 600px;
+    padding: 15px;
+    background: rgba(255,255,255,0.65);
+    position: relative;
+}
+.copy h2 {
+    font-family: lato, sans-serif;
+    font-weight: 200;
+    font-size: 34px;
+    color: #ff2c2c;
+    line-height: .9em;
+    margin-top:0;
+}
+.copy h6 {
+    font-size: 14px;
+    font-weight: 600;
+}
+.copy img {
+    position: absolute;
+    right: 5%;
+    bottom: -4%;
+    width: 25%;
+}
+.copy .btn-primary {
+    display: block;
+    margin: 60px auto;
+  }
 .flex-container {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -183,6 +171,49 @@
 
 }
 </style>
+    <body>
+      <div class="container-fluid hidden-xs" style="background: #555555;">
+        <div class="container">
+          <div class="row">
+            <ul class="prd-nav">
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#video">VIDEO</a></li>
+                <li><a href="#sizing">SIZING</a></li>
+                <li><a href="#">REVIEWS</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid prd-info" style="background-image: url('images/product/bg-se3-air.jpg');">
+        <div class="container">
+          <div class="copy pull-left">
+            <h2>THE MOST TECHNICALLY ADVANCED HELMET</h2>
+            <p>As the premier motorsports helmet in our line-up, the SE3 represents advancements of key, racer inspired features that make Troy Lee Designs helmets the benchmark with professional level off-road riders.</p>
+
+            <p>The SE3 helmet utilizes innovative features that set it apart from the norm. Highly developed materials and processes, advanced composites and hardware along with systems and designs exclusive to TLD keep you protected in the most critical moment. The Troy Lee Designs SE3 helmet is a must for every rider and condition.</p>
+
+            <h6>SE3 Features:</h6>
+            <ul>
+              <li>SNELL / DOT model 1500-1600 grams</li>
+              <li>Ultra lightweight machined cross-top titanium visor screws for durability and corrosion resistance</li>
+              <li>Visor features single point adjustability for custom height placement even with gloves on</li>
+              <li>Corrosion resistant titanium D-rings for superior strength and weight reduction</li>
+              <li>Removable mouthpiece and top scoop for color customization or damage replacement</li>
+              <li>SE3 helmet bag and 2 Vortex visors included</li>
+              </ul>
+              <h6>Comfortable Fit:</h6>
+            <ul>
+              <li>Removable, replaceable and washable comfort liner features moisture wicking Coolmax® and Dri-Lex® materials for a dryer/cooler fit</li>
+              <li>Liner is constructed of 3 different foam densities that conform to the rider’s head for a custom, tailored feel</li>
+              <li>Removable cheek pads with additional sizes available to fit a variety of  head shapes</li>
+              <li>Open cell foam and 3-layer mesh optimizes airflow and comfort</li>
+              <li>Revamped rear neck pad adds support and increases helmet stability for a  more secure fit</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <div class="container-fluid dk-gray">
         <div class="container">
           <div class="flex-container">
@@ -205,6 +236,117 @@
           </div>
         </div>
       </div>
+
+      <div class="container-fluid prd-info" style="background-image: url('images/product/bg-se3-prot.jpg');">
+        <div class="container">
+          <div class="copy pull-right">
+            <h2>TRIPLE DENSITY PROTECTION</h2>
+ 
+            <h6>Ultimate Safety:</h6>
+            <ul>
+              <li>Hand laid pre-preg carbon / composite shell with Kevlar® reinforcement in high impact zones</li>
+              <li>Dual-density EPS liner decreases impact forces to the head and absorbs  greater energy levels in more common low threshold impacts</li>
+              <li>Inner shock pad system is paired with the dual-density EPS liner to help absorb smaller impacts, withstand multiple hits and add greater durability for the EPS liner</li>
+              <li>Internal polyurethane chin bar liner with side EPS and dual-density materials for extra frontal impact energy absorption</li>
+              <li>Breakaway nylon visor inserts to shear away during a crash to prevent helmet snagging</li>
+
+            <h6>Maximum Airflow:</h6>
+              <li>Aggressive top scoop and mouthpiece designed to channel more air through the helmet for added comfort</li>
+              <li>Integrated injection molded brow intake system to channel air up and over rider’s forehead</li>
+              <li>Multi-level internal ventilation system built into liner for increased airflow</li>
+              <li>4 rear exhaust vents expel heat from inside the helmet</li>
+              <li>Stainless steel mesh grills on all ports to keep out debris, but keep airflow at a maximum</li>
+            
+            <h6>In The Box:</h6>
+              <li>SE3 protective helmet</li>
+              <li>2 Vortex visors </li>
+              <li>Custom helmet bag</li>
+              <li>Instructions</li>
+            </ul>
+            <img src="images/product/helmet-bag.png" alt="TLD Helmet Bag" />
+          </div>
+        </div>
+      </div>
+      <a name="video"></a> 
+      <div class="container-fluid prd-info" style="background-image: url('images/product/bg-se3-rider.jpg');">
+        <div class="container">
+          <div class="copy pull-left text-center">
+            <h2>SE3 PRODUCT VIDEOS</h2>
+ 
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/96pr1UnRIHg"><span class="glyphicon glyphicon-play-circle"></span>Watch R&amp;D Video</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/96pr1UnRIHg"><span class="glyphicon glyphicon-play-circle"></span>Watch Features Video</button>
+
+          </div>
+        </div>
+      </div>
+      <a name="sizing"></a> 
+      <div id="size" class="container-fluid dk-gray">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <span class="vcenter">
+                <img src="images/product/logo-se3.png" width="220" />
+                <h4>SE3 SIZING INFORMATION</h4>
+              </span>
+            </div>
+            <div class="col-md-8 table-responsive">
+              <table class="table table-bordered table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th>HELMET SIZE</th>
+                    <th>HAT SIZE</th>
+                    <th>CM</th>
+                    <th>INCHES</th>
+                  </tr>
+                </thead>
+                <tfoot>
+                 <tr>
+                  <td colspan="4">*Headliners and cheekpads can be interchanged within the same EPS size. SE3 cheekpads are interchangable through the entire size range.</td>
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                  <th scope="row">X-SMALL</th>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                </tr>
+                <tr>
+                  <th scope="row">SMALL</th>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                </tr>
+                <tr>
+                  <th scope="row">MEDIUM</th>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                </tr>
+                <tr>
+                  <th scope="row">LARGE</th>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                </tr>
+                <tr>
+                  <th scope="row">X-LARGE</th>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                </tr>
+                <tr>
+                  <th scope="row">2X-LARGE</th>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                  <td>Table cell</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer style="background:#555555;height:300px;">
     </footer>

@@ -19,8 +19,9 @@
 /* Padding below the footer and lighter body text */
 html, body {height:100%;}
 body {
-  color: #5a5a5a;
+  color: #666666;
   font-family: Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 .btn {border-radius: 0;}
 .btn.focus, .btn:focus, .btn:hover {
@@ -35,8 +36,9 @@ body {
     font-size: 14px;
     padding: 15px 35px;
     text-transform: uppercase;
+    transition: ease-in-out all .2s;
 }
-.btn-primary:hover {background-color: #ff5858;border-color:#ff5858;}
+.btn-primary:hover {background-color: #ff5858;border-color:#ff5858;text-shadow: 2px 2px 0px #de1e1e;}
 .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {background-color: #de1e1e;border-color:#de1e1e;}
 .btn-fade {
     width: 100%;
@@ -48,6 +50,13 @@ body {
 }
 a:hover .btn-fade {
     opacity: 1;
+}
+.glyphicon-play-circle {
+    font-size: 200%;
+    vertical-align: middle;
+    top: inherit;
+    padding: 0;
+    margin-right: 10px;
 }
 
 /* CUSTOMIZE THE NAVBAR
@@ -65,6 +74,7 @@ background-color: #444444;
     color: #f8f8f8;
     font-family: 'Norwester', sans-serif;
     font-size: 24px;
+    font-weight: normal;
 }
 .navbar-default .navbar-nav>li>a:hover {
     color: #ffffff;
@@ -305,7 +315,6 @@ background-color: #444444;
 }
 #size .table-bordered {
     border: 1px solid #444444;
-    background: #666;
     color: #dddddd;
     margin-bottom:0;
     text-align: left;
@@ -321,6 +330,8 @@ background-color: #444444;
 }
 #size .table-responsive {
     border: none;
+    background: #666666;
+    padding:0;
   }
 #size .table-bordered tfoot td {font-size:12px;}
 
