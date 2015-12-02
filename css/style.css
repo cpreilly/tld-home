@@ -216,11 +216,7 @@ background-color: #444444;
 }
 .sports3 {
     background: url(../images/home/shop-sport.jpg);     
-    transition: all 2s ease;
-    background-size: 100%;
-
 }
-.sports3:hover {background-size:120%;}
 .moto3:before, .bike3:before, .sports3:before {position:absolute;width: 100%;height:100%;background:rgba(0,0,0,0.25);top:0;left:0;content: "";transition: all .2s ease; }
 .moto3:hover:before, .bike3:hover:before, .sports3:hover:before {background: rgba(0,0,0,0.5);
 }
@@ -424,7 +420,9 @@ background-color: #444444;
   }
 .shop3 {height:30%;}
 .shop3 div {height: 50%;}
-
+#newgear img {
+    padding: 70px 0;
+}
 .pro {height:600px;}
 .pro-setup {height: 100%;}
 .moto {
