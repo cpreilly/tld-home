@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'BlenderProBook';
+  src: url('../fonts/blenderpro-book-webfont.eot');
+  src: url('../fonts/blenderpro-book-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/blenderpro-book-webfont.woff') format('woff'), url('../fonts/blenderpro-book-webfont.ttf') format('ttf') ;
+}
+@font-face {
+  font-family: 'BlenderProBold';
+  src: url('../fonts/blenderpro-bold-webfont.eot');
+  src: url('../fonts/blenderpro-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/blenderpro-bold-webfont.woff') format('woff') ;
+}
+@font-face {
+  font-family: 'Norwester';
+  src: url('../fonts/norwester-webfont.eot');
+  src: url('../fonts/norwester-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/norwester-webfont.woff') format('woff'), url('../fonts/norwester-webfont.woff2') format('woff2'), url('../fonts/norwester-webfont.ttf') format('ttf'), url('../fonts/norwester-webfont.svg') format('svg') ;
+}
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -22,7 +38,17 @@ body {
 }
 .btn-primary:hover {background-color: #ff5858;border-color:#ff5858;}
 .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {background-color: #de1e1e;border-color:#de1e1e;}
-
+.btn-fade {
+    width: 100%;
+    background: #ff2c2c;
+    color: #ffffff;
+    padding: 10px 20px;
+    opacity: 0;
+    transition: .5s all ease .2s;
+}
+a:hover .btn-fade {
+    opacity: 1;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -37,6 +63,8 @@ background-color: #444444;
 }
 .navbar-default .navbar-nav>li>a {
     color: #f8f8f8;
+    font-family: 'Norwester', sans-serif;
+    font-size: 24px;
 }
 .navbar-default .navbar-nav>li>a:hover {
     color: #ffffff;
@@ -88,9 +116,33 @@ background-color: #444444;
 }
 .carousel-inner {height: 100%;}
 /* Since positioning the image, we need to help out the caption */
+
 .carousel-caption {
-  z-index: 10;
+    position: absolute;
+    right: 0;
+    bottom: 65px;
+    left: 0;
+    z-index: 10;
+    padding: 20px;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
 }
+  #hmSlider h2 {
+    color: #ff2c2c;
+    margin: 0;
+    font-size: 30px;
+    font-family: 'Norwester', sans-serif;
+    line-height: 0.9em;
+  }
+  #hmSlider h1 {
+    color: #dddddd;
+    margin-bottom: 20px;
+    margin-top:5px;
+    font-size: 34px;
+    font-family: 'Norwester', sans-serif;
+    line-height: 0.9em;
+  }
+  .carousel-caption p {margin:0;}
 .carousel-control.right, .carousel-control.left {background-image:none; }
 /* Declare heights because of positioning of img element */
 
@@ -118,17 +170,17 @@ background-color: #444444;
     background: url(../images/home/tld-slide-1.jpg);
 }
 .s2 {
-    background: url(http://placehold.it/2000x1000); 
+    background: url(../images/home/tld-slide-2.jpg); 
 }
-
-  #hmSlider h1 {margin-top:0;line-height: .85em}
-  #hmSlider h2 {margin-bottom:-5px;}
+.s3 {
+    background: url(../images/home/tld-slide-3.jpg); 
+}
 
 /* SHOP THREE SECTION
 -------------------------------------------------- */
 
 .shop3 {height:auto;text-align: center;}
-.shop3 h3 {font-weight: normal;margin-bottom:0;}
+.shop3 h3 {font-weight: normal;margin-bottom:0;font-family: 'Norwester', sans-serif;font-size:28px;}
 .shop3 div {
     height: 150px;
     -webkit-background-size: cover;
@@ -157,29 +209,32 @@ background-color: #444444;
 }
 
 .moto3 {
-    background: url(http://placehold.it/500x200);
+    background: url(../images/home/shop-moto.jpg);
 }
 .bike3 {
-    background: url(http://placehold.it/500x200); 
+    background: url(../images/home/shop-bike.jpg); 
 }
 .sports3 {
-    background: url(http://placehold.it/500x200); 
+    background: url(../images/home/shop-sport.jpg);     
+    transition: all 2s ease;
+    background-size: 100%;
+
 }
-.moto3:before, .bike3:before, .sports3:before {position:absolute;width: 100%;height:100%;background:rgba(0,0,0,0.25);top:0;left:0;content: "" }
+.sports3:hover {background-size:120%;}
+.moto3:before, .bike3:before, .sports3:before {position:absolute;width: 100%;height:100%;background:rgba(0,0,0,0.25);top:0;left:0;content: "";transition: all .2s ease; }
+.moto3:hover:before, .bike3:hover:before, .sports3:hover:before {background: rgba(0,0,0,0.5);
+}
 
 /* NEW GEAR HOME 
 ------------------------- */
-#newgear a {
-    display: inline-block;
-    padding: 15px 30px;
-    width: auto;
-    color: #999999;
-    transition: all .2s ease;
-    text-decoration: none;
-}
-#newgear a:hover {
-    background: #ff2c2c;
-    color:#ffffff;
+#newgear h3 {
+    position: relative;
+    text-align: center;
+    margin: 0;
+    padding: 25px 0;
+    transform:none;
+    -ms-transform: none;
+    -webkit-transform: none;
 }
 
 /* PRO SETUP HOME 
@@ -212,17 +267,6 @@ background-color: #444444;
     max-width: 150px;
     max-height: 150px;
 }
-.pro-row span {
-    width: 100%;
-    background: #ff2c2c;
-    color: #ffffff;
-    padding: 10px 20px;
-    opacity: 0;
-    transition: .5s all ease .2s;
-}
-.pro-row a:hover span {
-    opacity: 1;
-}
 .pro-row .col-xs-6 {
     position:relative;
 }
@@ -253,9 +297,10 @@ background-color: #444444;
 
 /* Products
 ------------------------- */
-#size, #certs {background:#444444;padding:70px 0;}
-#size span img, #certs span img {width:50%;}
-#size span h4, #certs span h4 {
+.dk-gray {background: #444444;color:#dddddd;padding:70px 0;}
+#size {text-align: center;}
+#size span {position:relative;}
+#size span h4 {
     margin: 10px 0;
     color: #dddddd;
     font-family: "HelveticaNeue-Light", helvetica, sans-serif;
@@ -267,6 +312,7 @@ background-color: #444444;
     background: #666;
     color: #dddddd;
     margin-bottom:0;
+    text-align: left;
 }
 #size .table-bordered>tbody>tr>td, #size .table-bordered>tbody>tr>th, #size .table-bordered>tfoot>tr>td, #size .table-bordered>tfoot>tr>th, #size .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
     border: 1px solid #555555;
@@ -281,6 +327,13 @@ background-color: #444444;
     border: none;
   }
 #size .table-bordered tfoot td {font-size:12px;}
+
+/* FLEXBOX
+------------------------- */
+
+
+
+
 /* Featurettes
 ------------------------- */
 
@@ -288,7 +341,7 @@ background-color: #444444;
     padding: 0;
     margin: 0;
 }
-.shdw {text-shadow: 2px 2px 0 #666;}
+.shdw {text-shadow: 2px 2px 0 rgba(0,0,0,0.75);}
 .vcenter {
   position: absolute;
   top: 50%;
@@ -359,21 +412,18 @@ background-color: #444444;
 */
 
   /* Bump up size of carousel content */
-  .land-wrap {height:100%;min-height: 600px;}
+  .land-wrap {height:calc(100% - 70px);min-height: 600px;}
   .carousel {
-    height: 65%;
+    height: 70%;
   }
-  .carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 1.4;
+  #hmSlider h2 {
+    font-size: 34px;
   }
-
-.shop3 {height:35%;}
-.shop3 div {height: 100%;}
-
-#newgear .row {display:table;}
-#newgear h3 {margin:0 15px;}
+  #hmSlider h1 {
+    font-size: 56px;
+  }
+.shop3 {height:30%;}
+.shop3 div {height: 50%;}
 
 .pro {height:600px;}
 .pro-setup {height: 100%;}
@@ -387,33 +437,34 @@ background-color: #444444;
 }
 @media (min-width: 992px) {
   #hmSlider h2 {
-    color: #ff2c2c;
     margin-bottom: 5px;
     font-size: 42px;
   }
   #hmSlider h1 {
-    color: #dddddd;
-    margin-bottom: 20px;
     font-size: 80px;
-    font-weight: 600;
-    line-height: .85em;
   }
 
   .carousel-caption {    
     text-align: left;
-    max-width: 500px;
-    float: right;
-    right: inherit;
-    bottom: inherit; 
-    left: inherit; 
-    padding-top: 0;
-    padding-bottom: 0;
+    right: 20%;
+    left: 20%;
+    bottom: 20px; 
 }
+.shop3 div {height: 100%;}
 .moto {
     background-position-x: center;
 }
 .bike {
     background-position-x: center;
+}
+#newgear h3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    text-align: left;
+    margin: 0 15px;
 }
 #newgear .row {
   display: -webkit-box;
@@ -427,13 +478,12 @@ background-color: #444444;
   display: -ms-flexbox;
   display: flex;
 }
-  #size span, #certs span {
+#size {text-align: left;}
+#size span {
+    position:absolute;
     border-right: 1px #666666 solid;
-    padding: 50px 25px 50px 0;
+    padding: 50px 50px 50px 0;
     margin-right: 25px;
 }
-#size span h4, #certs span h4 {margin:10px 0 0;}
-#size span img {width:75%;}
-#certs span img {width:75%;}
-#certs .slogos {width:25%;}
+#size span h4, {margin:10px 0 0;}
 }
