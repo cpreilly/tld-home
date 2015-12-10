@@ -310,6 +310,7 @@ background-color: #dddddd;
 
 /* NEW GEAR HOME 
 ------------------------- */
+#newgear a {display: block;}
 #newgear h3 {
     position: relative;
     text-align: center;
