@@ -83,8 +83,8 @@
             <div class="carousel-caption shdw">
               <h2>2016 BIKE HELMETS : D3</h2>
               <h1>ADVANCED GRAVITY/RACE PROTECTION</h1>
-              <p><a class="btn btn-lg btn-primary btn-arw hover_effect" href="#" role="button">SHOP NOW</a>
-                <a class="btn btn-lg btn-default btn-arw hover_effect" href="#" role="button">LEARN MORE</a></p>
+              <p><a class="btn btn-lg btn-primary btn-arw taphover" href="#" role="button">SHOP NOW</a>
+                <a class="btn btn-lg btn-default btn-arw taphover" href="#" role="button">LEARN MORE</a></p>
             </div>
           </div>
         </div>
@@ -330,7 +330,7 @@
           </article>
         </div>
       </div>
-      <a href="/" class="pull-right">View More &raquo;</a>
+      <a href="/" class="pull-right taphover">View More &raquo;</a>
     </div> <!--/container news -->
 
 
@@ -349,11 +349,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 <script>
-$(document).ready(function() {
-    $('.hover').bind('touchstart touchend', function(e) {
+$('a.taphover').on("touchstart", function (e) {
+    "use strict"; //satisfy the code inspectors
+    var link = $(this); //preselect the link
+    if (link.hasClass('hover')) {
+        return true;
+    } else {
+        link.addClass("hover");
+        $('a.taphover').not(this).removeClass("hover");
         e.preventDefault();
-        $(this).toggleClass('hover_effect');
-    });
+        return false; //extra, and to make sure the function has consistent return points
+    }
 });
 </script>
   </body>

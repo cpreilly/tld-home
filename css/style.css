@@ -23,6 +23,7 @@ body {
   font-family: Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+a:hover, a.taphover.hover {color:red;}
 .btn {border-radius: 0;}
 .btn.focus, .btn:focus, .btn:hover {
     color: #ffffff;
@@ -407,10 +408,6 @@ color: #ffffff;
 /* Featurettes
 ------------------------- */
 
-.hover {
--webkit-user-select: none;
--webkit-touch-callout: none;        
-}
 .dk-gray {background: #444444;color:#dddddd;padding:70px 0;}
 .lt-gray {background: #dddddd;padding:70px 0;}
 .no-gutter {
