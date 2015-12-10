@@ -92,7 +92,7 @@ body {
     opacity: 1;
 }
 
-a:hover .btn-fade. a.taphover.hover .btn-fade {
+a:hover .btn-fade, a.taphover.hover .btn-fade {
     opacity: 1;
 }
 .glyphicon-play-circle {
