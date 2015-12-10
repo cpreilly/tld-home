@@ -74,7 +74,7 @@ body {
     opacity: 0;
     transition: .5s all ease .2s;
 }
-.btn-arw:hover {padding: 17px 50px 17px 40px;}
+.btn-arw:hover, .btn-arw.hover_effect {padding: 17px 50px 17px 40px;}
 .btn-arw:after {
   font-family: 'Glyphicons Halflings';
     position: absolute;
@@ -119,6 +119,7 @@ background-color: #dddddd;
     font-family: 'BlenderProBook', sans-serif;
     font-size: 24px;
     font-weight: 600;
+    text-transform: uppercase;
 }
 .navbar-default .navbar-nav>li>a:hover {
     color: #777777;
@@ -253,9 +254,9 @@ background-color: #dddddd;
 /* SHOP THREE SECTION
 -------------------------------------------------- */
 
-.shop3 {height:auto;text-align: center;}
-.shop3 h3 {font-weight: normal;margin-bottom:0;font-family: 'BlenderProBold', sans-serif;font-size:28px;}
-.shop3 div {
+.threeup {height:auto;text-align: center;}
+.threeup h3 {font-weight: normal;margin-bottom:0;font-family: 'BlenderProBold', sans-serif;font-size:28px;}
+.threeup div {
     height: 150px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -265,34 +266,34 @@ background-color: #dddddd;
     background-position: center;
     overflow: hidden;
 }
-.moto3 span, .bike3 span, .sports3 span {
+.three-left span, .three-center span, .three-right span {
     width: 100%;
     color: #ffffff;
     padding: 10px 20px;
 }
-.shop3 p {
+.threeup p {
     opacity: 0;
     transition: .5s all ease .2s;
     font-size: 16px;
 }
-.shop3 .moto3:hover p, .shop3 .bike3:hover p, .shop3 .sports3:hover p {
+.threeup .three-left:hover p, .threeup .three-center:hover p, .threeup .three-right:hover p {
     opacity: 1;
 }
-.shop3 .moto3 {
+.threeup .three-left {
     position:relative;
 }
 
-.moto3 {
+.three-left {
     background: url(../images/home/shop-moto.jpg);
 }
-.bike3 {
+.three-center {
     background: url(../images/home/shop-bike.jpg); 
 }
-.sports3 {
+.three-right {
     background: url(../images/home/shop-sport.jpg);     
 }
-.moto3:before, .bike3:before, .sports3:before {position:absolute;width: 100%;height:100%;background:rgba(0,0,0,0.25);top:0;left:0;content: "";transition: all .2s ease; }
-.moto3:hover:before, .bike3:hover:before, .sports3:hover:before {background: rgba(0,0,0,0.5);
+.three-left:before, .three-center:before, .three-right:before {position:absolute;width: 100%;height:100%;background:rgba(0,0,0,0.25);top:0;left:0;content: "";transition: all .2s ease; }
+.three-left:hover:before, .three-center:hover:before, .three-right:hover:before {background: rgba(0,0,0,0.5);
 }
 
 /* NEW GEAR HOME 
@@ -406,6 +407,10 @@ color: #ffffff;
 /* Featurettes
 ------------------------- */
 
+.hover {
+-webkit-user-select: none;
+-webkit-touch-callout: none;        
+}
 .dk-gray {background: #444444;color:#dddddd;padding:70px 0;}
 .lt-gray {background: #dddddd;padding:70px 0;}
 .no-gutter {
@@ -428,7 +433,15 @@ color: #ffffff;
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
   }
-
+  .cover {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
 /******************************
  VIDEO MODAL
 *******************************/
@@ -519,8 +532,8 @@ iframe {border: none;}
   #hmSlider h1 {
     font-size: 56px;
   }
-.shop3 {height:30%;}
-.shop3 div {height: 50%;}
+.threeup {height:30%;}
+.threeup div {height: 50%;}
 #newgear img {
     padding: 70px 0;
 }
@@ -551,7 +564,7 @@ iframe {border: none;}
     left: 20%;
     bottom: 20px; 
 }
-.shop3 div {height: 100%;}
+.threeup div {height: 100%;}
 .moto {
     background-position-x: center;
 }

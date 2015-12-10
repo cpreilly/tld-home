@@ -83,8 +83,8 @@
             <div class="carousel-caption shdw">
               <h2>2016 BIKE HELMETS : D3</h2>
               <h1>ADVANCED GRAVITY/RACE PROTECTION</h1>
-              <p><a class="btn btn-lg btn-primary btn-arw" href="#" role="button">SHOP NOW</a>
-                <a class="btn btn-lg btn-default btn-arw" href="#" role="button">LEARN MORE</a></p>
+              <p><a class="btn btn-lg btn-primary btn-arw hover_effect" href="#" role="button">SHOP NOW</a>
+                <a class="btn btn-lg btn-default btn-arw hover_effect" href="#" role="button">LEARN MORE</a></p>
             </div>
           </div>
         </div>
@@ -117,21 +117,21 @@
       </a>
     </div><!-- /.carousel -->
 
-          <!-- Three columns of text below the carousel -->
-      <div class="row no-gutter shop3">
-        <div class="col-sm-6 col-md-4 moto3">
+       <!--three up -->
+      <div class="row no-gutter threeup">
+        <div class="col-sm-6 col-md-4 three-left">
           <span class="shdw center">
             <h3>SHOP MOTO</h3>
             <p>MENS  :  WOMENS  :  YOUTH</p>
           </span>
         </div><!-- /.col-lg-4 -->
-        <div class="col-sm-6 col-md-4 bike3">
+        <div class="col-sm-6 col-md-4 three-center">
           <span class="shdw center">
           <h3>SHOP BIKE</h3>
           <p>MENS  :  WOMENS  :  YOUTH</p>
           </span>
         </div><!-- /.col-lg-4 -->
-        <div class="col-sm-12 col-md-4 sports3">
+        <div class="col-sm-12 col-md-4 three-right">
           <span class="shdw center">
           <h3>SHOP SPORTSWEAR</h3>
           <p>MENS  :  WOMENS  :  YOUTH</p>
@@ -348,5 +348,13 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('.hover').bind('touchstart touchend', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('hover_effect');
+    });
+});
+</script>
   </body>
 </html>
