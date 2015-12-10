@@ -23,7 +23,6 @@ body {
   font-family: Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-a:hover, a.taphover.hover {color:red;}
 .btn {border-radius: 0;}
 .btn.focus, .btn:focus, .btn:hover {
     color: #ffffff;
@@ -75,7 +74,7 @@ a:hover, a.taphover.hover {color:red;}
     opacity: 0;
     transition: .5s all ease .2s;
 }
-.btn-arw:hover, .btn-arw.hover_effect {padding: 17px 50px 17px 40px;}
+.btn-arw:hover, .btn-arw.taphover.hover {padding: 17px 50px 17px 40px;}
 .btn-arw:after {
   font-family: 'Glyphicons Halflings';
     position: absolute;
@@ -88,12 +87,12 @@ a:hover, a.taphover.hover {color:red;}
   -moz-transition: all 0.2s;
   transition: all 0.2s;
 }
-.btn-arw:hover:after {
+.btn-arw:hover:after, .btn-arw.taphover.hover:after {
     margin-left: 10px;
     opacity: 1;
 }
 
-a:hover .btn-fade {
+a:hover .btn-fade. a.taphover.hover .btn-fade {
     opacity: 1;
 }
 .glyphicon-play-circle {
@@ -367,6 +366,9 @@ background-color: #dddddd;
     font-weight: 500;
 }
 
+/* HOME NEWS
+------------------------- */
+#news a:hover, #news a.taphover.hover {color:#ff2c2c;}
 /* Products
 ------------------------- */
 #size {text-align: center;}
