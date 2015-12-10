@@ -75,7 +75,7 @@ body {
     transition: .5s all ease .2s;
 }
 .btn-arw:hover, .btn-arw.taphover.hover {padding: 17px 50px 17px 40px;}
-.btn-arw:after {
+.btn-arw:after, .btn-arw.taphover.hover:after {
   font-family: 'Glyphicons Halflings';
     position: absolute;
   margin-left: -1em;
