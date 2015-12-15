@@ -313,7 +313,7 @@ background-color: #dddddd;
 
 /* NEW GEAR HOME 
 ------------------------- */
-#newgear a {display: block;}
+#newgear a {padding:50px 0;}
 #newgear h3 {
     position: relative;
     text-align: center;
