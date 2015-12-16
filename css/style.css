@@ -212,27 +212,32 @@ background-color: #dddddd;
     z-index: 10;
     padding: 20px;
     text-align: center;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.75);
+}
+.carousel-caption .btn {
+    margin-top: 20px;
 }
   #hmSlider h2 {
-    color: #fff;
+    font-style: italic;
+    color: #aaaaaa;
     margin: 0;
-    font-size: 30px;
-    font-family: 'blenderprobook', sans-serif;
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
     line-height: 0.9em;
     text-shadow: none;
   }
   #hmSlider h1 {
-    color: #fff;
-    margin-bottom: 20px;
+    color: #efefef;
+    margin-bottom: 0;
     margin-top: 5px;
     font-size: 34px;
     font-family: 'blenderprobold', sans-serif;
-    line-height: 0.7em;
+    line-height: 0.8em;
     font-weight: 600;
     text-shadow: none;
   }
-  .carousel-caption p {margin:0;}
+.carousel-caption img {display: none;}
+.carousel-caption p {margin:0;}
 .carousel-control.right, .carousel-control.left {background-image:none; }
 /* Declare heights because of positioning of img element */
 
@@ -270,7 +275,8 @@ background-color: #dddddd;
 -------------------------------------------------- */
 
 .threeup {height:auto;text-align: center;}
-.threeup h3 {font-weight: normal;margin-bottom:0;font-family: 'BlenderProBold', sans-serif;font-size:28px;}
+.threeup a {color:#efefef;}
+.threeup h3 {font-weight: normal;margin-bottom:0;font-family: 'BlenderProBold', sans-serif;font-size:30px;}
 .threeup div {
     height: 150px;
     -webkit-background-size: cover;
@@ -289,7 +295,7 @@ background-color: #dddddd;
 .threeup p {
     opacity: 0;
     transition: .5s all ease .2s;
-    font-size: 16px;
+    font-size: 18px;
 }
 .threeup .three-left:hover p, .threeup .three-center:hover p, .threeup .three-right:hover p {
     opacity: 1;
@@ -693,6 +699,7 @@ iframe {border: none;}
   }
 .threeup {height:30%;}
 .threeup div {height: 50%;}
+.threeup h3 {font-size:40px;}
 #newgear img {
     padding: 70px 0;
 }
@@ -722,17 +729,26 @@ iframe {border: none;}
 @media (min-width: 992px) {
   #hmSlider h2 {
     margin-bottom: 5px;
-    font-size: 42px;
+    font-size: 30px;
   }
   #hmSlider h1 {
-    font-size: 80px;
+    font-size: 50px;
   }
-
   .carousel-caption {    
     text-align: left;
-    right: 20%;
-    left: 20%;
-    bottom: 20px; 
+    right: 15%;
+    left: auto;
+    bottom: 20px;
+    float: right;
+    display: block;
+    width: 305px;
+}
+.carousel-caption .btn {width: 100%;}
+.carousel-caption img {
+    display: block;
+    width: 100%;
+    opacity: .5;
+    margin-top: 10px;
 }
 .threeup div {height: 100%;}
 .moto {
