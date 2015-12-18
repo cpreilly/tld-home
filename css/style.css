@@ -398,13 +398,39 @@ background-color: #dddddd;
 ------------------------- */
 #news a {color:#666666;}
 #news a:hover, #news a.taphover.hover {color:#ff2c2c;}
-
-#news article {background: url(http://placehold.it/600x260) no-repeat center #f8f8f8;background-size:cover;height: 200px;overflow: hidden;}
-#news span.date {background: rgba(255,0,0,0.75);color: #ffffff;padding:40px 20px;display: inline-block;height: 75%;font-size: 25px;font-weight: 600;}
-#news span.date strong {display: block;font-size: 48px;font-weight: 200;line-height: .65em;}
-#news span.snip {display: block;background: rgba(0,0,0,0.5);height:25%;}
-#news span.snip a img {padding: 10px 15px;display: inline-block;}
-#news h5 {display:inline-block;font-size:16px;font-weight:600;}
+#news article {
+    background: #666666;
+    height: auto;
+    overflow: hidden;
+}
+#news span.date {
+    background: #ff2c2c;
+    color: #ffffff;
+    padding: 10px 10px;
+    display: block;
+    height: auto;
+    font-size: 14px;
+    font-weight: 600;
+    float: left;
+    line-height: 1em;
+}
+#news span.date strong {
+    display: block;
+    font-size: 26px;
+    font-weight: 200;
+    line-height: .8em;
+}
+#news span.snip {
+    display: block;
+    background: #666666;
+    height: auto;
+}
+#news span.snip a img {
+    padding: 11px 10px;
+    display: inline-block;
+    width: 75px;
+}
+#news h5 {display:inline-block;font-size:12px;font-weight:600;}
 #news h5 a {color:#ffffff;}
 
 /* Products
@@ -759,12 +785,8 @@ iframe {border: none;}
     margin-top: 10px;
 }
 .threeup div {height: 100%;}
-.moto {
-    background-position-x: center;
-}
-.bike {
-    background-position-x: center;
-}
+.moto {background-position-x: center;}
+.bike {background-position-x: center;}
 #newgear span.vcenter {
     position: absolute;
     top: 50%;
@@ -782,6 +804,14 @@ iframe {border: none;}
   display: -ms-flexbox;
   display: flex;
 }
+#news {padding:30px 70px;}
+#news .row {padding-bottom:30px;}
+#news article {background: url(http://placehold.it/600x260) no-repeat center #666666;background-size:cover;height: 200px;}
+#news span.date {background: rgba(255,0,0,0.75);padding:40px 20px;display: inline-block;height: 75%;font-size: 25px;float:none;}
+#news span.date strong {font-size: 48px;line-height: .65em;}
+#news span.snip {background: rgba(0,0,0,0.5);height:25%;width:100%}
+#news span.snip a img {padding: 10px 15px;display: inline-block;}
+#news h5 {font-size:16px;}
 #size .row {
   display: -webkit-box;
   display: -webkit-flex;
