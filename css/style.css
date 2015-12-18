@@ -399,6 +399,14 @@ background-color: #dddddd;
 #news a {color:#666666;}
 #news a:hover, #news a.taphover.hover {color:#ff2c2c;}
 
+#news article {background: url(http://placehold.it/600x260) no-repeat center #f8f8f8;background-size:cover;height: 200px;overflow: hidden;}
+#news span.date {background: rgba(255,0,0,0.75);color: #ffffff;padding:40px 20px;display: inline-block;height: 75%;font-size: 25px;font-weight: 600;}
+#news span.date strong {display: block;font-size: 48px;font-weight: 200;line-height: .65em;}
+#news span.snip {display: block;background: rgba(0,0,0,0.5);height:25%;}
+#news span.snip a img {padding: 10px 15px;display: inline-block;}
+#news h5 {display:inline-block;font-size:16px;font-weight:600;}
+#news h5 a {color:#ffffff;}
+
 /* Products
 ------------------------- */
 
