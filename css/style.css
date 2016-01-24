@@ -489,7 +489,12 @@ background-color: #dddddd;
 
 /* Products
 ------------------------- */
-
+.prd-tabs {
+    background: #dddddd;
+    padding: 0
+}
+.prd-tabs .container, .prd-nav {padding:0;}
+.prd-tabs .row {margin:0;}
 .prd-nav li {
     display: inline;
     float: left;
@@ -501,9 +506,9 @@ background-color: #dddddd;
 }
 .prd-nav li a {
     color: #666666;
-    font-size: 24px;
-    padding: 25px 15px;
-    height: 70px;
+    font-size: 16px;
+    padding: 15px 0;
+    height: 45px;
     display: block;
     position: relative;
     font-family: 'BlenderProBook', sans-serif;
@@ -784,6 +789,7 @@ iframe {border: none;}
 .ath-soc img {width: 100%;}
 /*Products*/
 .prd-info {min-height: 800px;}
+.prd-nav li a {font-size: 24px;padding: 25px 15px;height: 70px;}
 .copy {background: rgba(255,255,255,0.85);}
 .flex-marker {text-align: left;border-right: 1px #cccccc solid;padding: 0 25px 0 0;margin-right: 25px;}
 .vertical-align {display: flex;align-items: center;}
