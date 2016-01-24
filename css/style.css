@@ -631,6 +631,7 @@ background-color: #dddddd;
     -ms-flex-item-align: auto;
     align-self: auto;
     }
+.container.icons img {padding: 10px 0;}
 #size {text-align: center;}
 #size span {position:relative;}
 #size .table-bordered {
@@ -672,6 +673,7 @@ color: #ffffff;
     margin: 0;
 }
 .shdw {text-shadow: 2px 2px 0 rgba(0,0,0,0.75);}
+.vertical-align {display: block;}
 .vcenter {
   position: absolute;
   top: 50%;
@@ -784,6 +786,7 @@ iframe {border: none;}
 .prd-info {min-height: 800px;}
 .copy {background: rgba(255,255,255,0.85);}
 .flex-marker {text-align: left;border-right: 1px #cccccc solid;padding: 0 25px 0 0;margin-right: 25px;}
+.vertical-align {display: flex;align-items: center;}
 }
 @media (min-width: 992px) {
 #hmSlider h2 {margin-bottom: 5px;font-size: 30px;}
