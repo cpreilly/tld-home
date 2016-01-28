@@ -315,6 +315,7 @@ background-color: #dddddd;
 /* NEW GEAR HOME 
 ------------------------- */
 #newgear a {padding:50px 0;}
+#newgear img {display:inline;}
 #newgear span.vcenter {
     position: relative;
     text-align: center;
