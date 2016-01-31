@@ -733,17 +733,18 @@ iframe {border: none;}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-@media (min-width: 768px) {
+@media (min-width: 768px) { 
 .navbar-nav {padding: 0;}
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:visited {padding: 25px 0;font-size: 18px;}
 .navbar>.container-fluid .navbar-brand, .navbar>.container-fluid .navbar-brand {margin: 0;background: url(../images/tld-full-logo.png) no-repeat center #efefef;background-size:219px;color: #777777;width:250px;}
 .navbar .container-fluid {padding:0;}
-.navbar-links {width: calc(100% - 530px);}
+.navbar-links {width: calc(100% - 450px);}
 .navbar-links li {width:25%;text-align: center;}
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {color: #777777;background-color: #dddddd;}
-.navbar-icons {width:280px;}
-.navbar-icons li {width: 70px;height: 70px;background: #efefef;color: #777777;}
+.navbar-icons {width: 200px;}
+.navbar-icons li {width: 50px;height: 70px;background: #efefef;color: #777777;}
 .navbar-icons li:hover {color: #777777;background-color: #efefef;} 
-.navbar-icons span {font-size: 24px;padding: 16px 22px;}
+.navbar-icons span {font-size: 24px;padding: 16px 12px;}
 .navbar-right {margin-right: 0;}
 .navbar-nav .dropdown-menu li {margin: 0;height: auto;width: 100%;text-align: left;}
 .navbar-nav > li > .dropdown-menu {width:100%;}
@@ -796,6 +797,12 @@ iframe {border: none;}
 .vertical-align {display: flex;align-items: center;}
 }
 @media (min-width: 992px) {
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:visited {font-size: 24px;}
+.navbar-nav li a {padding: 25px 0;font-size: 18px;}
+.navbar-icons {width:280px;}
+.navbar-icons span {padding: 16px 22px;}
+.navbar-icons li {width: 70px;}
+.navbar-links {width: calc(100% - 530px);}
 #hmSlider h2 {margin-bottom: 5px;font-size: 30px;}
 #hmSlider h1 {font-size: 50px;}
 .carousel-caption {text-align: left;right: 15%;left: auto;bottom: 20px;float: right;display: block;width: 305px;}
