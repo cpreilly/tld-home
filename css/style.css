@@ -491,6 +491,7 @@ span.plus {
     float: left;
     top:0;
 }
+#csvinfo ul.dropdown-menu {text-align:left;}
 #csvfit, #csvinfo {padding: 20px 0;}
 #csvfit .nav-tabs {border:0;}
 #csvfit .nav-tabs>li {
